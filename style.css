@@ -28,6 +28,12 @@ h1 em { color: var(--gold); font-style: normal; }
 .cta { display: inline-flex; align-items: center; gap: 18px; margin-top: 23px; padding: 15px 19px; background: var(--gold); color: var(--ink); text-decoration: none; text-transform: uppercase; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; transition: transform .2s, background .2s; }
 .cta:hover { background: var(--gold-light); transform: translateY(-3px); }
 .cta::after { content: "→"; font-size: 20px; line-height: 12px; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.hero-actions .cta { margin-top: 23px; }
+.audio-toggle { display: inline-flex; align-items: center; gap: 9px; margin-top: 23px; padding: 13px 15px; border: 1px solid rgba(255,255,255,.55); background: rgba(16,16,16,.5); color: white; cursor: pointer; font: 800 10px Manrope, sans-serif; letter-spacing: 1px; text-transform: uppercase; transition: background .2s, border-color .2s; }
+.audio-toggle:hover, .audio-toggle.is-playing { border-color: var(--gold); background: rgba(213,165,55,.2); }
+.audio-toggle svg { width: 18px; height: 18px; fill: currentColor; }
+.audio-toggle .sound-wave { fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 1.7; }
 .side-note { position: absolute; z-index: 3; right: clamp(22px, 5vw, 80px); bottom: 75px; writing-mode: vertical-rl; color: var(--gray); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
 section { padding: 110px clamp(22px, 8vw, 135px); }
 .intro { display: grid; grid-template-columns: .7fr 1.3fr; gap: 8vw; background: var(--paper); color: var(--ink); }
