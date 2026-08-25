@@ -28,7 +28,7 @@
           <div class="eyebrow">Projeto social · Muito além do ringue</div>
           <h1>Lute por<br />
             <em>uma vida</em><br />melhor.</h1>
-            <p>O Boxe pela Vida é um projeto social que usa o esporte para criar oportunidades. Aqui, transformamos suor em confiança, disciplina e futuro.</p><a class="cta" href="#contato">Faça parte</a></div>
+            <p>O Boxe pela Vida é um projeto social que usa o esporte para criar oportunidades. Aqui, transformamos suor em confiança, disciplina e futuro.</p><div class="hero-actions"><a class="cta" href="#contato">Faça parte</a><button class="audio-toggle" id="audio-toggle" type="button" aria-pressed="false" aria-label="Ativar som do vídeo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"></path><path class="sound-wave" d="M16 9.5a4 4 0 0 1 0 5"></path><path class="sound-wave" d="M18.5 7a7.5 7.5 0 0 1 0 10"></path></svg><span>Ativar som</span></button></div></div>
         <span class="side-note">Boxe pela Vida / Transformando histórias</span>
       </section>
       <section class="intro"><h2>O ringue<br />é o nosso <span>começo.</span></h2><div>
@@ -48,5 +48,19 @@
     </main>
     
     <footer><span>© 2026 Boxe pela Vida</span><a href="https://www.instagram.com/boxepelavidact/" target="_blank" rel="noopener noreferrer">@boxepelavidact</a><span>Coragem muda histórias.</span></footer>
+    <script>
+      const heroVideo = document.querySelector(".hero-video-main");
+      const audioToggle = document.getElementById("audio-toggle");
+
+      audioToggle.addEventListener("click", () => {
+        heroVideo.muted = !heroVideo.muted;
+        const isMuted = heroVideo.muted;
+        audioToggle.setAttribute("aria-pressed", String(!isMuted));
+        audioToggle.setAttribute("aria-label", isMuted ? "Ativar som do vídeo" : "Desativar som do vídeo");
+        audioToggle.classList.toggle("is-playing", !isMuted);
+        audioToggle.querySelector("span").textContent = isMuted ? "Ativar som" : "Desativar som";
+        heroVideo.play();
+      });
+    </script>
   </body>
 </html>
