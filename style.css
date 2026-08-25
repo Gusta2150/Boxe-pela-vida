@@ -16,7 +16,7 @@ nav a:hover { color: var(--gold-light); }
 .hero-video { z-index: 0; }
 .hero-video { object-fit: cover; opacity: .43; }
 .hero iframe.hero-video { border: 0; pointer-events: none; }
-.hero-overlay { pointer-events: none; }
+.hero-overlay { pointer-events: auto; }
 .hero-overlay { z-index: 1; background: linear-gradient(90deg, rgba(16,16,16,.94) 0%, rgba(16,16,16,.58) 48%, rgba(16,16,16,.2)), linear-gradient(0deg, #101010 0%, transparent 35%); }
 .hero-content { position: relative; z-index: 2; width: fit-content; }
 .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--gold-light); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.2px; }
