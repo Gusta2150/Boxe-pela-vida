@@ -26,7 +26,6 @@
             <p>O Boxe pela Vida é um projeto social que usa o esporte para criar oportunidades. Aqui, transformamos suor em confiança, disciplina e futuro.</p><a class="cta" href="#contato">Faça parte</a></div>
         <span class="side-note">Boxe pela Vida / Transformando histórias</span>
       </section>
-
       <section class="intro"><h2>O ringue<br />é o nosso <span>começo.</span></h2><div>
         <p>Somos um projeto social que acredita no poder do esporte para construir caminhos. A cada treino, criamos um espaço seguro para aprender, crescer e descobrir a própria força.</p><p>Não importa de onde você vem. Importa onde você quer chegar.</p><div class="stats"><div><strong>+200</strong><small>Histórias em movimento</small></div><div><strong>01</strong><small>Propósito em comum</small></div><div><strong>100%</strong><small>De coração</small></div></div></div></section>
       <section class="about" id="quem-somos"><div class="photo-frame"><img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1000&q=85" alt="Atleta treinando boxe" /></div>
@@ -40,19 +39,9 @@
           <p>Treinos, encontros e conquistas. Um pouco da energia que move o Boxe pela Vida todos os dias.</p></div><div class="grid"><figure><img src="https://images.unsplash.com/photo-1517438322307-e67111335449?auto=format&fit=crop&w=900&q=80" alt="Treino de boxe" /><figcaption>Foco no treino</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?auto=format&fit=crop&w=900&q=80" alt="Lutador de boxe" /><figcaption>Em movimento</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Luvas de boxe" /><figcaption>Prontos para lutar</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1521804906057-1df8fdb718b7?auto=format&fit=crop&w=1300&q=80" alt="Atleta em treinamento" /><figcaption>Uma equipe, um propósito</figcaption></figure></div></section>
       <section class="contact" id="contato"><div><div class="eyebrow" style="color:#5c4311">Fale com a gente</div>
         <h2>Seu próximo<br/>round começa<br/>aqui.</h2>
-        <p>Quer participar, apoiar ou conhecer melhor o projeto? Deixe uma mensagem. Vamos adorar conversar com você.</p></div><form id="contact-form"><label>Seu nome<input required name="name" type="text" placeholder="Como podemos te chamar?" /></label><label>Telefone<input required name="phone" type="tel" placeholder="(00) 00000-0000" /></label><label>Mensagem<textarea required name="message" rows="4" placeholder="Escreva sua mensagem aqui"></textarea></label><button type="submit">Enviar mensagem</button><p id="form-status" aria-live="polite"></p></form></section>
+        <p>Quer participar, apoiar ou conhecer melhor o projeto? Mande uma mensagem para nossa equipe pelo WhatsApp.</p></div><div class="whatsapp-contact"><p>Sua mensagem será enviada para o nosso celular:</p><a class="whatsapp-button" href="https://wa.me/5511949312606?text=Quero%20conhecer%20o%20projeto%21%21" target="_blank" rel="noopener noreferrer">Quero conhecer o projeto!! <span>↗</span></a><small>Ao clicar, o WhatsApp abre com a mensagem pronta para você enviar.</small></div></section>
     </main>
     
     <footer><span>© 2026 Boxe pela Vida</span><a href="https://www.instagram.com/boxepelavidact/" target="_blank" rel="noopener noreferrer">@boxepelavidact</a><span>Coragem muda histórias.</span></footer>
-    <script>
-      document.getElementById("contact-form").addEventListener("submit", (event) => {
-        event.preventDefault();
-        const data = new FormData(event.currentTarget);
-        const subject = encodeURIComponent(`Contato do site — ${data.get("name")}`);
-        const body = encodeURIComponent(`Nome: ${data.get("name")}\nTelefone: ${data.get("phone")}\n\nMensagem:\n${data.get("message")}`);
-        document.getElementById("form-status").textContent = "Abrindo seu aplicativo de e-mail...";
-        window.location.href = `mailto:gusta.camisa12@gmail.com?subject=${subject}&body=${body}`;
-      });
-    </script>
   </body>
 </html>
